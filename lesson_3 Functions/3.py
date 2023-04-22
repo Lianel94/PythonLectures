@@ -19,6 +19,18 @@ def sum_str(*args):
 
 print(sum_str('q', 'e', 'l'))
 print(sum_str('q', 'e', 'l', 'f', 'r'))
-print(sum_str(1, 8, 9)) #error, int not str
+""" print(sum_str(1, 8, 9)) #error, int not str """
 
 # MODULES
+
+# Recursions
+
+def fib(n):
+    if n in [1,2]:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+list1 = []
+for i in range(1, 10):
+    list1.append(fib(i))
+print(list1)
